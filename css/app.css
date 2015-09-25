@@ -5,7 +5,6 @@ pan {
   box-sizing: border-box;
   position: relative;
 
-  display: flex;
   flex-direction: column;
   align-items: stretch;
   flex-shrink: 0;
@@ -21,6 +20,80 @@ body,html{
   height:100%;
 }
 
-body{
+body {
+  background-color: #1F1E34;
+  color: #FFF;
+  font-family: "Avenir Next",
+      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+      Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-weight: 400;
+  color: #FFF;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #DADADA;
+  text-decoration: none;
+}
+
+.section {
+  height: 100vh;
+  border: 2px solid #FFF;
+}
+
+/* Style about section one*/
+
+.one, .nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.one{
+  background-image: url("/img/background.jpg");
+}
+
+.links a{
+  padding: 10px;
+}
+
+/* Style about section two*/
+.two,.three,.four,.iphone-demo,.feature-description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.iphone-demo {
   background-color: rgba(255,0,0,0.3);
+}
+
+.feature-description {
+  background-color: rgba(0,255,0,0.3);
+  flex-direction: column;
+}
+
+.iphone-demo, .feature-description{
+  align-self: stretch;
+  flex-grow: 1;
+  flex-basis: 0;
 }
