@@ -8,7 +8,6 @@ body {
       "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
       Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
-  position: relative;
 }
 
 h1 {
@@ -97,6 +96,10 @@ a:hover {
 
 /*slider-control*/
 
+body{
+    position: relative;
+}
+
 #slider-control {
   position:fixed;
   top: 50%;
@@ -133,3 +136,4 @@ a:hover {
 .nav, .links {
   position: relative;
   z-index: 2;
+}
