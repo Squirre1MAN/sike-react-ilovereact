@@ -431,6 +431,7 @@ body {
       "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
       Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
+  margin: 0px;
 }
 
 h1 {
@@ -458,13 +459,16 @@ a:hover {
   text-decoration: none;
 }
 
+#react-logo {
+  position: relative;
+}
+
 .section {
   height: 100vh;
 }
 
 /* Style about section one*/
-
-.one, .nav{
+.nav{
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -482,10 +486,30 @@ a:hover {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .one{
   background-image: url("../img/background.jpg");
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .links a{
@@ -556,12 +580,6 @@ a:hover {
   bottom: 0;
 }
 
-/*slider-control*/
-
-body{
-    position: relative;
-}
-
 #slider-control {
   position:fixed;
   top: 50%;
@@ -587,7 +605,6 @@ body{
   background-color: #fff;
 }
 
-/*OverLay*/
 .overlay {
   position: absolute;
   top: 0;
@@ -598,7 +615,7 @@ body{
   background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
-.nav, .links {
+.nav,.react-logo,.links {
   position: relative;
   z-index: 2;
 }

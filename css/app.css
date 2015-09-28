@@ -36,21 +36,31 @@ a:hover {
   text-decoration: none;
 }
 
+#react-logo {
+  position: relative;
+}
+
 .section {
   height: 100vh;
 }
 
 /* Style about section one*/
-
-.one, .nav{
+.nav{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .one{
   background-image: url("../img/background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .links a{
@@ -95,12 +105,6 @@ a:hover {
   bottom: 0;
 }
 
-/*slider-control*/
-
-body{
-    position: relative;
-}
-
 #slider-control {
   position:fixed;
   top: 50%;
@@ -124,7 +128,6 @@ body{
   background-color: #fff;
 }
 
-/*OverLay*/
 .overlay {
   position: absolute;
   top: 0;
@@ -134,7 +137,7 @@ body{
   background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
-.nav, .links {
+.nav,.react-logo,.links {
   position: relative;
   z-index: 2;
 }
