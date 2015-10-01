@@ -510,6 +510,7 @@ a:hover {
           justify-content: center;
   position: relative;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .links a{
@@ -517,7 +518,7 @@ a:hover {
 }
 
 /* Style about section two */
-.two,.three,.four,.iphone-demo,.feature-description{
+.two,.three,.four,.iphone-demo{
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -539,15 +540,52 @@ a:hover {
   overflow: hidden;
 }
 
-.feature-description {
+.feature-description.tumblr-demo{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.feature-description.swype-demo{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.iphone-demo, .feature-description{
+.iphone-demo.swype-demo, .feature-description.swype-demo{
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
@@ -562,6 +600,7 @@ a:hover {
 
 .iphone{
   position: relative;
+
 }
 
 .iphone-demo img:last-child,
@@ -588,6 +627,7 @@ a:hover {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 #slider-control a {
@@ -618,4 +658,37 @@ a:hover {
 .nav,.react-logo,.links {
   position: relative;
   z-index: 2;
+}
+
+#curtain{
+  height: 100vh;
+  width: 100vw;
+  position:absolute;
+  top:0px;
+  background-color: #1F1E34;
+  opacity: 0;
+  z-index: 3;
+}
+
+#iphone-overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 4;
+  -webkit-transform:  translate(0,-40%);
+      -ms-transform:  translate(0,-40%);
+          transform:  translate(0,-40%);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
